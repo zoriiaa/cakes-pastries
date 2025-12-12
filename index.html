@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея рецептів</title>
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+    <header>
+        <h1>ТОРТИКИ & ТІСТЕЧКА</h1>
+        <p>Задоволення від кожного шматочка</p>
+    </header>
+
+    <section class="filter-section">
+        <div class="filters">
+            <div class="filter-group">
+                <h3>Вид виробу:</h3>
+                <div class="filter-buttons">
+                    <input type="radio" name="type" id="all" value="all" checked>
+                    <label for="all">Всі</label>
+                    
+                    <input type="radio" name="type" id="cake" value="cake">
+                    <label for="cake">Торти</label>
+                    
+                    <input type="radio" name="type" id="cupcake" value="cupcake">
+                    <label for="cupcake">Капкейки</label>
+                    
+                    <input type="radio" name="type" id="cookie" value="cookie">
+                    <label for="cookie">Печиво</label>
+                    
+                    <input type="radio" name="type" id="tart" value="tart">
+                    <label for="tart">Тарти</label>
+
+                    <input type="radio" name="type" id="roll" value="roll">
+                    <label for="roll">Рулети</label>
+
+                    <input type="radio" name="type" id="pie" value="pie">
+                    <label for="pie">Пироги</label>
+
+                    <input type="radio" name="type" id="cheesecake" value="cheesecake">
+                    <label for="cheesecake">Сирники</label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Калорійність (до ккал):</h3>
+                <div class="calories-filter">
+                    <input type="range" id="calories" min="100" max="500" value="500" step="50">
+                    <span>500</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="gallery">
+            <article class="card" data-type="cake" data-calories="450">
+                <img src="img/strawberry_chiffon_cake.jpg" alt="Полуничний торт 'Шифон' " class="card-image">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="card-title">Полуничний торт "Шифон"</h2>
+                        <span class="card-calories">450 ккал</span>
+                    </div>
+                    <p class="card-description">Багатошаровий бісквітний торт з вершковим кремом та свіжою полуницею. Святковий десерт для особливих випадків.</p>
+                    <div class="card-ingredients">
+                        <h4>Інгредієнти:</h4>
+                        <ul>
+                            <li>Борошно - 350г</li>
+                            <li>Яйця - 5шт</li>
+                            <li>Цукор - 250г</li>
+                            <li>Вершки 33% - 500мл</li>
+                            <li>Полуниця - 400г</li>
+                        </ul>
+                    </div>
+                    <div class="card-time">
+                        <span>Підготовка: 30 хв</span>
+                        <span>Випікання: 45 хв</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-type="cupcake" data-calories="280">
+                <img src="img/red_velvet_cupcakes.jpg" alt="Оксамитові капкейки" class="card-image">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="card-title">Оксамитові капкейки</h2>
+                        <span class="card-calories">280 ккал</span>
+                    </div>
+                    <p class="card-description">Яскраві капкейки з ніжним червоним бісквітом, вершковим кремом та святковим декором у вигляді сердечок.</p>
+                    <div class="card-ingredients">
+                        <h4>Інгредієнти:</h4>
+                        <ul>
+                            <li>Борошно - 200г</li>
+                            <li>Какао - 20г</li>
+                            <li>Яйця - 3шт</li>
+                            <li>Вершковий сир - 200г</li>
+                            <li>Барвник червоний - 1ст.л.</li>
+                        </ul>
+                    </div>
+                    <div class="card-time">
+                        <span>Підготовка: 20 хв</span>
+                        <span>Випікання: 25 хв</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-type="cookie" data-calories="150">
+                <img src="img/peanut_butter_chocolate_cookies.jpg" alt="Вівсяне печиво" class="card-image">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="card-title">Шоколадне вівсяне печиво</h2>
+                        <span class="card-calories">150 ккал</span>
+                    </div>
+                    <p class="card-description">М'яке вівсяне печиво з шматочками темного шоколаду. Ідеально поєднується з молоком або кавою.</p>
+                    <div class="card-ingredients">
+                        <h4>Інгредієнти:</h4>
+                        <ul>
+                            <li>Вівсяні пластівці - 200г</li>
+                            <li>Борошно - 150г</li>
+                            <li>Шоколад - 100г</li>
+                            <li>Масло - 120г</li>
+                            <li>Цукор коричневий - 100г</li>
+                        </ul>
+                    </div>
+                    <div class="card-time">
+                        <span>Підготовка: 15 хв</span>
+                        <span>Випікання: 20 хв</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-type="tart" data-calories="320">
+                <img src="img/mixed_berry_tart.jpg" alt="Ягідний тарт" class="card-image">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="card-title">Ягідний тарт</h2>
+                        <span class="card-calories">320 ккал</span>
+                    </div>
+                    <p class="card-description">Хрусткий тарт з ніжним кремом та свіжими ягодами.</p>
+                    <div class="card-ingredients">
+                        <h4>Інгредієнти:</h4>
+                        <ul>
+                            <li>Борошно - 250г</li>
+                            <li>Масло - 120г</li>
+                            <li>Вершки - 200мл</li>
+                            <li>Ягоди асорті - 300г</li>
+                            <li>Цукор - 100г</li>
+                        </ul>
+                    </div>
+                    <div class="card-time">
+                        <span>Підготовка: 35 хв</span>
+                        <span>Випікання: 30 хв</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-type="cake" data-calories="380">
+                <img src="img/tiramisu_cake.jpg" alt="Тірамісу" class="card-image">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="card-title">Тірамісу</h2>
+                        <span class="card-calories">380 ккал</span>
+                    </div>
+                    <p class="card-description">Класичний італійський десерт з ніжним кремом маскарпоне, печивом савоярді, просоченим кавою та какао.</p>
+                    <div class="card-ingredients">
+                        <h4>Інгредієнти:</h4>
+                        <ul>
+                            <li>Маскарпоне - 500г</li>
+                            <li>Савоярді - 300г</li>
+                            <li>Еспресо - 300мл</li>
+                            <li>Яйця - 4шт</li>
+                            <li>Какао - 30г</li>
+                        </ul>
+                    </div>
+                    <div class="card-time">
+                        <span>Підготовка: 40 хв</span>
+                        <span>Випікання: 50 хв</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-type="roll" data-calories="260">
+                <img src="img/strawberry_roll.jpg" alt="Полуничний рулет" class="card-image">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="card-title">Полуничний рулет</h2>
+                        <span class="card-calories">260 ккал</span>
+                    </div>
+                    <p class="card-description">Повітряний бісквітний рулет з ніжними збитими вершками та свіжими полуницями всередині.</p>
+                    <div class="card-ingredients">
+                        <h4>Інгредієнти:</h4>
+                        <ul>
+                            <li>Яйця - 4шт</li>
+                            <li>Борошно - 120г</li>
+                            <li>Цукор - 150г</li>
+                            <li>Вершки 33% - 300мл</li>
+                            <li>Полуниця - 200г</li>
+                        </ul>
+                    </div>
+                    <div class="card-time">
+                        <span>Підготовка: 20 хв</span>
+                        <span>Випікання: 22 хв</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-type="pie" data-calories="260">
+                <img src="img/apple_pie.jpg" alt="Яблучний пиріг" class="card-image">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="card-title">Яблучний пиріг</h2>
+                        <span class="card-calories">260 ккал</span>
+                    </div>
+                    <p class="card-description">Ароматний домашній пиріг з яблуками та корицею. Хрустка основа та соковита начинка створюють ідеальний баланс смаку.</p>
+                    <div class="card-ingredients">
+                        <h4>Інгредієнти:</h4>
+                        <ul>
+                            <li>Борошно - 300г</li>
+                            <li>Масло вершкове - 150г</li>
+                            <li>Яблука - 800г</li>
+                            <li>Цукор - 120г</li>
+                            <li>Кориця - 2ч.л.</li>
+                        </ul>
+                    </div>
+                    <div class="card-time">
+                        <span>Підготовка: 20 хв</span>
+                        <span>Випікання: 22 хв</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-type="cheesecake" data-calories="260">
+                <img src="img/cheesecake.jpg" alt="Сирники з малиною" class="card-image">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="card-title">Сирники з малиною</h2>
+                        <span class="card-calories">260 ккал</span>
+                    </div>
+                    <p class="card-description">Ніжні сирники з золотавою скоринкою, политі медовим сиропом та прикрашені свіжою малиною.</p>
+                    <div class="card-ingredients">
+                        <h4>Інгредієнти:</h4>
+                        <ul>
+                            <li>Сир кисломолочний - 500г</li>
+                            <li>Борошно - 100г</li>
+                            <li>Яйця - 2шт</li>
+                            <li>Цукор - 80г</li>
+                            <li>Малина - 150г</li>
+                        </ul>
+                    </div>
+                    <div class="card-time">
+                        <span>Підготовка: 20 хв</span>
+                        <span>Випікання: 22 хв</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Тортики & Тістечка</p>
+        <p>Смачних експериментів!</p>
+        <p><a href="#">Контакти</a> | <a href="#">Про нас</a></p>
+    </footer>
+
+
+</body>
+</html>
